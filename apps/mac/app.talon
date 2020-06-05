@@ -38,3 +38,21 @@ action(app.window_open):
 	
 action(app.window_previous):
 	key(cmd-shift-`)
+
+# spectacle
+# I think alt is option
+window left half:
+	key(cmd-alt-left)
+
+window right half:
+	key(cmd-alt-right)
+
+window full [screen]:
+	key(cmd-alt-up)
+
+window (move right | right monitor | move):
+	key(alt-right)
+
+
+window (move left | left monitor | move):
+	key(alt-left)

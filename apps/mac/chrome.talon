@@ -76,3 +76,8 @@ toggle profile:
 	key(cmd-shift-m)
 	key(down)
 	key(enter)
+
+switch profile: 
+	key(cmd-shift-m)
+	key(down)
+	key(enter)
