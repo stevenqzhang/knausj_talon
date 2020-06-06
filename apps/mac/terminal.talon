@@ -33,4 +33,6 @@ suspend:
 resume:
   insert("fg")
   key(enter)
-
+oops:
+  insert("oops")
+  key(enter)
