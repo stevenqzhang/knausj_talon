@@ -16,6 +16,7 @@ sleep all:
 talon sleep: speech.disable()
 talon wake: speech.enable()
 dragon mode: speech.disable()
+google docs mode: speech.disable()
 talon mode: speech.enable()
 ^dictation mode$:
     mode.disable("sleep")

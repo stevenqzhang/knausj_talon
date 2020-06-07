@@ -81,3 +81,6 @@ switch profile:
 	key(cmd-shift-m)
 	key(down)
 	key(enter)
+
+vimium:
+	key(shift-?)
