@@ -80,11 +80,8 @@ toggle profile:
 switch profile: 
 	key(cmd-shift-m)
 	key(down)
-<<<<<<< HEAD
+	key(enter)
 	key(enter)
 
 vimium:
 	key(shift-?)
-=======
-	key(enter)
->>>>>>> 68bbf1683fe599112c65b143994d39f7ebd31cda

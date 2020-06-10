@@ -40,37 +40,30 @@ action(app.window_previous):
 	key(cmd-shift-`)
 
 # spectacle
-<<<<<<< HEAD
 # I think alt === option
-window left [half]:
-	key(cmd-alt-left)
 
-window right [half]:
-=======
-# I think alt is option
-window left half:
-	key(cmd-alt-left)
-
-window right half:
->>>>>>> 68bbf1683fe599112c65b143994d39f7ebd31cda
+(window right half | half right):
 	key(cmd-alt-right)
 
-window full [screen]:
+(window left half | half left):
+	key(cmd-alt-left)
+
+(window top half | half top | half up):
+	key(cmd-up)
+
+(window bottom half | half bottom | half down):
+	key(cmd-down)
+
+(window full | window full screen | full screen):
 	key(cmd-alt-up)
 
 window (move right | right monitor | move):
 	key(alt-right)
 
-<<<<<<< HEAD
 window (move left | left monitor | move):
 	key(alt-left)
 
 # timeout break
 
 (take a long break | I need to take a break | invoke timeout):
-	key(ctrl-shift-t)
-=======
-
-window (move left | left monitor | move):
-	key(alt-left)
->>>>>>> 68bbf1683fe599112c65b143994d39f7ebd31cda
+	key(ctrl-shift: t)
