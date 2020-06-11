@@ -1,6 +1,6 @@
 tag: browser
 -
-(address bar | go address | go url): browser.focus_address()
+(address bar | go [to] address | go [to] url): browser.focus_address()
 go home: browser.go_home()
 forward: browser.go_forward()
 go back[ward]: browser.go_back()
@@ -22,6 +22,7 @@ show cache: browser.show_clear_cache()
 
 dev tools: browser.toggle_dev_tools()
 
+# vimium commands
 #todo - port to apps
 # navigating current page
 # help: key(?)
@@ -37,8 +38,8 @@ dev tools: browser.toggle_dev_tools()
 # scroll half up: key(u)
 # [open] link: key(f)
 # [open] link new: key(F)
-# copy link: key(y f)
-# copy (address | url): key(escape y y)
+copy link: key(y f)
+copy (address | url): key(escape y y)
 # (refresh | reload): browser.reload()
 # view source: key(g s)
 # insert mode: key(i)
@@ -50,15 +51,23 @@ dev tools: browser.toggle_dev_tools()
 # (open | go) bookmark: key(b)
 # (open | go) bookmark new: key(B)
     # using find
-# find mode: key(/)
+find mode: key(/)
 # next match: key(n)
 # previous match: key(N)
     # navigating history
-# history back: key(H)
-# history forward: key(L)
-    # manipulating tabs
-# last visited: key(^)
-# dupe tab: key(y t)
-# restore: key(X)
-# search tabs: key(T)
+history back: key(H)
+history forward: key(L)
+
+
+# manipulating tabs
+last (visited | tab): key(^)
+(dupe | duplicate) tab: key(y t)
+restore [tab]: key(X)
+search tabs: key(T)
 # move to window: key(W)
+
+tab one: key(cmd-1)
+tab two: key(cmd-2)
+tab three: key(cmd-3)
+tab four: key(cmd-4)
+tab five: key(cmd-5)
