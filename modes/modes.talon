@@ -18,11 +18,11 @@ talon wake: speech.enable()
 dragon mode: speech.disable()
 google docs mode: speech.disable()
 talon mode: speech.enable()
-^dictation mode$:
+(^dictation mode$ | dictation mode | flute | violin):
     mode.disable("sleep")
     mode.disable("command")
     mode.enable("dictation")
-^command mode$:
+(^command mode$ | command mode | captain | bell):
     mode.disable("sleep")
     mode.disable("dictation")
 	mode.enable("command")
