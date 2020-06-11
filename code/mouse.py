@@ -234,7 +234,7 @@ def gaze_scroll():
             return
             
         midpoint = window.y + window.height / 2
-        amount = int(((y - midpoint) / (window.height / 10)) ** 3)
+        amount = -int(((y - midpoint) / (window.height / 10)) ** 3)
         actions.mouse_scroll(by_lines=False, y=amount)
     
     #print(f"gaze_scroll: {midpoint} {window.height} {amount}")
