@@ -60,10 +60,16 @@ action(app.window_previous):
 window (move right | right monitor | move):
 	key(alt-right)
 
+monitor right:
+	key(alt-right)
+
 window (move left | left monitor | move):
+	key(alt-left)
+
+monitor left:
 	key(alt-left)
 
 # timeout break
 
 (take a long break | I need to take a break | invoke timeout):
-	key(ctrl-shift: t)
+	key(ctrl-shift-t)
