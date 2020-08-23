@@ -33,3 +33,10 @@ talon mode: speech.enable()
 ^force go language$: user.code_set_language_mode("go")
 ^force (talon | talent) language$: user.code_set_language_mode("talon")
 ^clear language modes$: user.code_clear_language_mode()
+
+# commands that i would like the dictation mode as well 
+
+show command history: user.history_enable()
+hide command history: user.history_disable()
+focus <user.running_applications>: user.switcher_focus(running_applications)
+

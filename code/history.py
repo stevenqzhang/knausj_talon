@@ -22,12 +22,13 @@ def on_phrase(j):
             gui.freeze()
    
 #todo: dynamic rect?
-@imgui.open(y=20, x=2320)
+# bottom right
+@imgui.open(x=2320, y=1375)
 def gui(gui: imgui.GUI):
     global history
-    gui.text("Command History")
-    gui.line()
-    text = history[:]
+    #gui.text("Command History")
+    #gui.line()
+    text = history[-3:]
     for line in text:
         gui.text(line)
 

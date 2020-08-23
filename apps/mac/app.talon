@@ -1,4 +1,5 @@
 os: mac
+mode: all
 -
 action(app.preferences):
 	key(cmd-,)

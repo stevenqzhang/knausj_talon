@@ -5,6 +5,7 @@ app: /jetbrains/
 app: IntelliJ IDEA
 app: PyCharm
 app: PyCharm64.exe
+app: WebStorm
 # When tags are supported
 #tags: ide
 -
@@ -292,3 +293,10 @@ action(user.ide_resize_window_down): user.idea("action ResizeToolWindowDown")
 <user.movement_verbs> line <number> end: user.idea_movement(movement_verbs, "goto {number} 9999")
 <user.movement_verbs> next <phrase> [over]: user.idea_movement(movement_verbs, "find next {phrase}, action EditorRight")
 <user.movement_verbs> last <phrase> [over]: user.idea_movement(movement_verbs, "find prev {phrase}, action EditorRight")
+
+
+(next difference | next diff):
+	key(f7)
+
+(previous difference | previous diff):
+	key(shift-f7)

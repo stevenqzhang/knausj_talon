@@ -20,7 +20,7 @@ show extensions: browser.show_extensions()
 show history: browser.show_history()
 show cache: browser.show_clear_cache()
 
-dev tools: browser.toggle_dev_tools()
+[show] dev tools: browser.toggle_dev_tools()
 
 # vimium commands
 #todo - port to apps

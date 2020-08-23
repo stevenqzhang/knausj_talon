@@ -85,3 +85,12 @@ switch profile:
 
 vimium:
 	key(shift-?)
+
+hard (reload | refresh):
+	key(cmd-shift-r)
+
+(eff eight | continue):
+	key(f8)
+
+toggle breakpoints:
+	key(cmd-f8)
