@@ -28,7 +28,7 @@ def on_phrase(j):
 @imgui.open(x=2320, y=1375, software=False)
 def gui(gui: imgui.GUI):
     global history
-    #gui.text("Command History")
+    gui.text("Command History")
     gui.line()
     text = history[:] if hist_more else history[-hist_short_len:]
     for line in text:
