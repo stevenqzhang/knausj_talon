@@ -3,7 +3,7 @@ from talon import imgui, Module, speech_system, actions
 # We keep hist_len lines of history, but by default display only hist_short_len of them.
 hist_len = 50
 hist_short_len = 10
-hist_more = False
+hist_more = True
 history = []
 
 
@@ -28,8 +28,8 @@ def on_phrase(j):
 @imgui.open(x=2320, y=1375, software=False)
 def gui(gui: imgui.GUI):
     global history
-    gui.text("Command History")
-    gui.line()
+#    gui.text("Command History")
+#    gui.line()
     text = history[:] if hist_more else history[-hist_short_len:]
     for line in text:
         gui.text(line)
